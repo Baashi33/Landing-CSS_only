@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .card .price {
+            font-size: 2.5em;
+            color: #2d69f0;
+            margin: 10px 0;
+        }
+        .card .price span {
+            font-size: 0.5em;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .card ul li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 0.9em;
+        }
+        .card ul li .icon {
+            margin-right: 10px;
+        }
+        .card ul li .icon.success {
+            color: #28a745;
+        }
+        .card ul li .icon.error {
+            color: #dc3545;
+        }
+        .card button {
+            background-color: #2d69f0;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .card button:hover {
+            background-color: #1b4fcc;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Starter</h2>
+        <div class="price">$9<span>/month</span></div>
+        <ul>
+            <li><span class="icon success">✔</span> Bandwidth: 1GB</li>
+            <li><span class="icon success">✔</span> Onlinespace: 500MB</li>
+            <li><span class="icon error">✖</span> Support: No</li>
+            <li><span class="icon success">✔</span> Domain: 1</li>
+            <li><span class="icon success">✔</span> Hidden Fees: No</li>
+        </ul>
+        <button>Join Now</button>
+    </div>
+</body>
+</html>
